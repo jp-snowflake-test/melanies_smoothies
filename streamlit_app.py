@@ -47,6 +47,9 @@ if ingredients_list:
 
         st.success(name_on_order + ' Your Smoothie is Ordered!', icon="✅")
 
+        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+        st.text(fruityvice_response)
+
 
 
 
